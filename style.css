@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+;root{
+    font-size: 62.5%;
+}
+
+body{
+    background: linear-gradient(45deg, #190361 0%, #B0F 100%) ;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+main{
+    background: white;
+    width: min(38.8rem, 90%);
+    height: min(36.4rem, 90%);
+    margin-top: -1.2rem;
+    text-align: center;
+    padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+
+    border-radius: 5px;
+    box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.80);
+}
+
+.hide{
+    display: none;
+}
+
+/*screen1*/
+.screen1 h1{
+    color: #34355B;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+
+    line-height: normal;
+}
+
+.screen1 p{
+    margin-top: 1.5rem;
+    color: #34355B;
+    text-align: center;
+    font-family: DM Sans;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.screen1 img{
+    margin-top: 4rem;
+}
+
+.screen1 img:hover{
+    animation: shake 0.5s ease infinite;
+}
+
+@keyframes shake {
+    0% { transform: translateX(0); }
+    20% { transform: translateX(-10px); }
+    40% { transform: translateX(10px); }
+    60% { transform: translateX(-10px); }
+    80% { transform: translateX(10px); }
+    100% { transform: translateX(0); }
+  }
+
+/*screen2*/
+.screen2 h2{
+    color: #34355B;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.screen2 p{
+    margin-top: 1.5rem;
+    background: #E4EDF1;
+    box-shadow: 2px 2px 2px 0px rgba(85, 85, 85, 0.50);
+
+    padding: 1rem;
+    color: #000;
+    text-align: center;
+    font-family: Dancing Script;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    animation: toFadeIn 2s;
+}
+
+.screen2 img{
+    margin-top: 1.7rem;
+}
+
+.screen2 button{
+    border-radius: 4px;
+    background: #FF9500;
+    border: none;
+    padding: 1rem;
+
+    color: #FFF;
+    text-align: center;
+    font-family: DM Sans;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+@keyframes toFadeIn {
+    0% {
+      transform:
+      translateY(150px)
+      scale(0.1);
+
+    }
+
+    100% {
+      transform:
+      translateY(0px)
+      scale(1);
+    }
+  }
+
